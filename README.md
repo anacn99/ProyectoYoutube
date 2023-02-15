@@ -25,11 +25,36 @@ Ahora reiniciamos el sistema con service nginx restart y probamos a entrar de nu
 
 ![Texto alternativo](negacion.png)
 
-## Nginx - Como Proxy
+## Nginx - Redirigir el error 404 a una página
 
 
-Para empezar debemos instalar openssl, que como vemos ya tenemos en su versión más reciente.
-![Texto alternativo](openssl.png)
+Para empezar editamos el archivo de configuración de Nginx para el sitio web predeterminado.
 
-Ahora volvemos al fichero de configuración de Nginx y le añadimos a la configuración el proxy, que sera nuestra Ip.
+![Texto alternativo](error404.png)
+
+Ahora volvemos al fichero de configuración de Nginx y le añadimos a la Agregamos al archivo de configuración el código de error.
+
+Ahora solo nos queda reiniciar el servicio con :
+    - service nginx restart
+
+Porbamos a intentar acceder a una página que no existe:
+
+![Texto alternativo](hola.png)
+
+
+
+En nuestro ejemplo, el error 404 se redirija a una dirección URL específica mediante un código 302.
+
+Hay varias maneras de redirigir una página de error usando Nginx.
+## Nginx - Añadir un encabezado personalizado
+
+Para ello en el servidor de Nginx tenemos también que modificar el archivo de configuración de Nginx.
+
+A este archivo le añadimos la siguiente líena de configuración:
+![Texto alternativo](confi.png)
+
+De nuevo nos toca reinicar el servicio de nginx 
+![Texto alternativo](reinciar.png)
+
+Y ya estaría agregado el encabezado.
 
