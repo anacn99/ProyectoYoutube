@@ -54,7 +54,7 @@ A este archivo le añadimos la siguiente líena de configuración:
 ![Texto alternativo](confi.png)
 
 De nuevo nos toca reinicar el servicio de nginx 
-![Texto alternativo](reinciar.png)
+![Texto alternativo](reiniciar.png)
 
-Y ya etsaría agregado el encabezado.
+Y ya estaría agregado el encabezado.
 
