@@ -1,3 +1,0 @@
-# archivo requirements.txt
-fastapi==0.59.0                 # Framework web
-uvicorn==0.11.5                 # Servidor
