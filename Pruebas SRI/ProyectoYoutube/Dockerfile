@@ -2,6 +2,8 @@ FROM python:3
 
 WORKDIR /usr/src/app
 
-COPY requeriments.txt ./
+RUN pip install pytube
 
-RUN pip install --no-cache-dir  -r requeriments.txt
+COPY  ./app /usr/src/app
+
+CMD [ "python", "miscript.py"]
