@@ -10,6 +10,18 @@ Tendremos también que construir la imagen, para ello utilizamos el comando buil
 ~~~
   docker build -t youtubeimagen:latest .
 ~~~ 
+
+Una vez construído todo el proceso podemos hacer el docker run para ver como se ejecuta:
+~~~
+(venv) asir2a@perlanegra13:~/Documentos/SRI/Pruebas SRI/ProyectoYoutube$ docker-compose run python
+Creating proyectoyoutube_python_run ... done
+Title:  Samantha Hudson y Papa Topo - Por España
+Number of views:  1264075
+Length of video:  266 seconds
+Description:  Samantha Hudson y Papa Topo - Por España
+https://links.altafonte.com/ox8plxd
+~~~
+
 Hemos creado además un archivo de docker-compose.yml, que es el que lanzaremos con la imagen para lanzar el script de python que contiene lo que queremos.
 Nuestro script de python se llama "miscript.py".
 ~~~
@@ -71,17 +83,6 @@ python_1  | Description:  Samantha Hudson y Papa Topo - Por España
 python_1  | https://links.altafonte.com/ox8plxd
 .....
 ~~~
-Una vez construído todo el proceso podemos hacer el docker run para ver como se ejecuta:
-~~~
-(venv) asir2a@perlanegra13:~/Documentos/SRI/Pruebas SRI/ProyectoYoutube$ docker-compose run python
-Creating proyectoyoutube_python_run ... done
-Title:  Samantha Hudson y Papa Topo - Por España
-Number of views:  1264075
-Length of video:  266 seconds
-Description:  Samantha Hudson y Papa Topo - Por España
-https://links.altafonte.com/ox8plxd
-~~~
-
 Yendo al directorio correspondiente podemos ver que se ha creado el vídeo.
 
 Ahora podemos subir esta imagen que hemos creado al servicio de DockerHub.
