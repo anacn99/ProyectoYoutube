@@ -71,6 +71,17 @@ python_1  | Description:  Samantha Hudson y Papa Topo - Por España
 python_1  | https://links.altafonte.com/ox8plxd
 .....
 ~~~
+Una vez construído todo el proceso podemos hacer el docker run para ver como se ejecuta:
+~~~
+(venv) asir2a@perlanegra13:~/Documentos/SRI/Pruebas SRI/ProyectoYoutube$ docker-compose run python
+Creating proyectoyoutube_python_run ... done
+Title:  Samantha Hudson y Papa Topo - Por España
+Number of views:  1264075
+Length of video:  266 seconds
+Description:  Samantha Hudson y Papa Topo - Por España
+https://links.altafonte.com/ox8plxd
+~~~
+
 Yendo al directorio correspondiente podemos ver que se ha creado el vídeo.
 
 Ahora podemos subir esta imagen que hemos creado al servicio de DockerHub.
