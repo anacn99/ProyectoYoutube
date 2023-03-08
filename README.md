@@ -1,6 +1,6 @@
 # ProyectoYoutube
 
-##Docker + Python
+## Docker + Python
 
 Comenzamos el proceso descargando la imagen de python, ya que la necesitaremos para poder realizar la tarea.
 ~~~
