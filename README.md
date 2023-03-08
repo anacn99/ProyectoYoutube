@@ -5,8 +5,9 @@
 Comenzamos el proceso descargando la imagen de python, ya que la necesitaremos para poder realizar la tarea.
   docker pull python:3
 Tendremos también que construir la imagen, para ello utilizamos el comando build y le damos el nombre a la imagen:
+~~~
   docker build -t youtubeimagen:latest .
-  
+ ~~~ 
 ![Texto alternativo](1234.png)
   
 Hemos creado además un archivo de docker-compose.yml, que es el que lanzaremos con la imagen para lanzar el script de python que contiene lo que queremos.
@@ -34,14 +35,14 @@ Yendo al directorio correspondiente podemos ver que se ha creado el vídeo:
 
 Ahora podemos subir esta imagen que hemos creado al servicio de DockerHub.
 Para ello nos creamos la cuenta y realizamos los pasos que nos indican.Creamos el repositorio,le damos un nombre y desde la terminal hacemos lo siguiente:
+~~~
   docker login
   
   docker tag youtubeimagen anacn99/python-youtube1
   
   docker push anacn99/python-youtube1:latest
-  
+~~~
   El enlace de nuestro repositorio para dockerhub es el siguiente:
-  
-    [enlace en línea](https://hub.docker.com/repositories/anacn99)
+[enlace en línea](https://hub.docker.com/repositories/anacn99)
     
   
